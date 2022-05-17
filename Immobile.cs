@@ -33,7 +33,7 @@ namespace csharp_agenzia
 
         protected virtual string Write()
         {
-            return string.Format("Codice: {0}\nIndirizzo: {1}\nCap: {2}\nCittà: {3\nSuperficie: {4}}",
+            return string.Format("Codice: {0}\nIndirizzo: {1}\nCap: {2}\nCittà: {3}\nSuperficie: {4}",
                         this.Codice,
                         this.Indirizzo,
                         this.Cap,
@@ -41,19 +41,9 @@ namespace csharp_agenzia
                         this.Superficie);
         }
 
-        public bool Contains(string key)
+        public virtual bool Contains(string key)
         {
-            Console.WriteLine("Sto in contain Immobile");
-            if (this.Cap.Contains(key))
-            {
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("Ciao");
-            } 
-
-            
+                     
 
             if (this.Codice.Contains(key)) return true;
             else if (this.Indirizzo.Contains(key)) return true;

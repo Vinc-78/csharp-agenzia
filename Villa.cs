@@ -29,7 +29,7 @@ namespace csharp_agenzia
                 ); 
 
         }
-        public  bool Contains(string key)
+        public override bool Contains(string key)
         {
             if (base.Contains(key)) return true;
             else if (this.Giardino.ToString().Contains(key)) return true;
